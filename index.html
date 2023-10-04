@@ -4,24 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontEnd Store</title>
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="preload" href="styles/normalize.css" as="style">
+    <link href="styles/normalize.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles/styles.css" rel="stylesheet">
     
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="index.html">
-            <img src="img/logo.png" alt="Logotipo">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
         </a>
     </header>
     
-    <nav>
-        <a href="#">Tienda</a>
-
-        <a href="#">Nosotros</a>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="tienda.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
     </nav>
+
+    <main class="contenedor">
+        <h1>Nuestros Productos</h1>
+
+        <div class="grid">
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/1.jpg" alt="Camiseta Vuejs">
+                <div>   
+                    <p class="producto__nombre">VueJS</p>
+                    <p class="producto__precio">$25.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/2.jpg" alt="Camiseta Angularjs">
+                <div>
+                    <p class="producto__nombre">AngularJS</p>
+                    <p class="producto__precio">$27.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/3.jpg" alt="Camiseta Reactjs">
+                <div>
+                    <p class="producto__nombre">ReactJS</p>
+                    <p class="producto__precio">$27.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/4.jpg" alt="Camiseta Redux">
+                <div>
+                    <p class="producto__nombre">Redux</p>
+                    <p class="producto__precio">$25.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/5.jpg" alt="Camiseta Nodejs">
+                <div>
+                    <p class="producto__nombre">NodeJS</p>
+                    <p class="producto__precio">$27.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/6.jpg" alt="Camiseta SASS">
+                <div>
+                    <p class="producto__nombre">SASS</p>
+                    <p class="producto__precio">$25.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/7.jpg" alt="Camiseta HTML">
+                <div>
+                    <p class="producto__nombre">HTML 5</p>
+                    <p class="producto__precio">$28.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/8.jpg" alt="Camiseta GitHub">
+                <div>
+                    <p class="producto__nombre">GitHub</p>
+                    <p class="producto__precio">$28.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/9.jpg" alt="Camiseta BULMA">
+                <div>
+                    <p class="producto__nombre">BulmaCSS</p>
+                    <p class="producto__precio">$25.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/10.jpg" alt="Camiseta GitHub">
+                <div>
+                    <p class="producto__nombre">TimeScript</p>
+                    <p class="producto__precio">$27.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/11.jpg" alt="Camiseta Drupal">
+                <div>
+                    <p class="producto__nombre">Drupal</p>
+                    <p class="producto__precio">$25.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/12.jpg" alt="Camiseta JavaScript">
+                <div>
+                    <p class="producto__nombre">JavaScript</p>
+                    <p class="producto__precio">$28.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/13.jpg" alt="Camiseta GraphPL">
+                <div>
+                    <p class="producto__nombre">GraphQL</p>
+                    <p class="producto__precio">$25.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <a href="producto.html"></a>
+                <img class="producto__imagen" src="img/14.jpg" alt="Camiseta wordpress">
+                <div>
+                    <p class="producto__nombre">WordPress</p>
+                    <p class="producto__precio">$25.000</p>
+                </div>
+            </div> <!-- Producto -->
+
+            <div class="grafico grafico--camisas">
+            </div>
+
+            <div class="grafico grafico--node">
+            </div>
+
+        </div> 
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos reservados 2023</p>
+    </footer>
+
 </body>
 </html>
